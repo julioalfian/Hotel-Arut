@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div id="map" style="height:430px;width:100%px;">
+<script>
+
+              function initMap() {
+  var myLatLng = {lat: -7.1023752, lng: 112.3686404};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 17,
+    center: myLatLng,
+    title: 'Uluru (Ayers Rock)'
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!',
+    animation: google.maps.Animation.BOUNCE,
+
+  });
+}
+
+
+
+            </script>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_F_lt61MFmyC0mioFz3ck80dijmnztSI&callback=initMap" async defer></script>
+</body>
+</html>
